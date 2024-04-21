@@ -35,13 +35,15 @@ cd live_stream_dash
 ```
 ./target/release/video_surveillance
 ```
+### Watching From Localhost
+Open Chrome browser and type http://localhost:2323/
 
-
-### Exposing Server with Ngrok
+### Exposing Server with Ngrok (If wanted to Stream Online))
 - To expose the local server and allow external access:
 ```
 ngrok http 2323
 ```
+to command prompt.
 Replace `2323` with the actual port number where your server listens. This command provides a URL that can be used to access the server from the internet.
 
 Streams video to `/video` directory with DASH chunks and `manifest.mpd`.
